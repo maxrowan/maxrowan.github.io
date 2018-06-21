@@ -2,11 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Max</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+
 </head>
-<body>
-    <h1>Max Rowan</h1>
+<body class="elegant-color">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-dark elegant hidden">
+
+        <!-- Name/Logo -->
+        <a class="navbar-brand max-text-color" href="#jumbotron">MAX.</a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="nav">
+
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Jumbotron -->
+    <div id="jumbotron" class="jumbotron text-center grey lighten-5 z-depth-2">
+        <h1 class="max text-elegant font-bold"><strong>MAX.</strong></h1>
+    </div>
+
+    <!-- Site Content -->
+    <div class="container">
+
+        <!-- About -->
+        <div id="about" class="row pt-5 pb-5 ">
+            <div class="col-md-6">
+                <h2 class="white-text">Hi. I'm Max.</h2>
+                <p class="white-text">I'm a recent college graduate with a major in Computer Science.</p>
+            </div>
+            <div class="col-md-6">
+                <div id="description">
+                    <p class="white-text">My journey into the wonderful world of developing has been a little unorthodox. My first foray into programming and its associated concepts was a high school Java course, and I hated it so much that I stopped having anything to do with development until college, where I started out enrolled in a mechanical engineering program. During my freshman year, I saw some friends working on some pretty cool (albeit simple) applications. I decided to switch majors and haven't regretted it since. </p>
+                    <p class="white-text pt-2">Okay, maybe once or twice.</p>
+                    <p  class="white-text"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+
+    </div>
+
+    <!-- scripts -->
+    <div>
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+        <!-- My Scripts -->
+        <script type="text/javascript" src="./js-scripts.js"></script>
+    </div>
 </body>
 </html>

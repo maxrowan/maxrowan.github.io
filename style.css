@@ -1,0 +1,26 @@
+#description {
+    margin-top: 10em;
+}
+
+.hidden {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.jumbotron {
+    height: 100vh;
+}
+
+.max {
+    font-size: 37em;
+}
+
+.elegant {
+    background-color: #2E2E2E;
+}
+
+.text-elegant {
+    color: #2E2E2E ;
+}
+
