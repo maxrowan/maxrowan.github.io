@@ -2,6 +2,11 @@
     margin-top: 10em;
 }
 
+#project-titles-list {
+    height: 100%;
+    width: 100%;
+}
+
 .hidden {
     position: absolute !important;
     top: -9999px !important;
@@ -24,3 +29,8 @@
     color: #2E2E2E ;
 }
 
+.project-title-li {
+    height: 33.33333333%;
+    line-height: 33.33333333%;
+    text-align: center;
+}

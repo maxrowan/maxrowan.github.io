@@ -1,127 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Max</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Max</title>
+	
+	<link rel="stylesheet" href="style.css">
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
 
 </head>
 <body class="elegant-color">
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-dark elegant hidden">
+	
+	<!-- Navbar -->
+	<nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-dark elegant hidden">
+		
+		<!-- Name/Logo -->
+		<a class="navbar-brand max-text-color" href="#jumbotron">MAX.</a>
+		
+		<!-- Collapse button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+		        aria-controls="nav"
+		        aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<!-- Collapsible content -->
+		<div class="collapse navbar-collapse" id="nav">
+			
+			<!-- Links -->
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link">Home
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">Contact</a>
+				</li>
+			</ul>
+		</div>
+	
+	</nav>
+	
+	<!-- Jumbotron -->
+	<div id="jumbotron" class="jumbotron text-center white z-depth-2">
+		<h1 class="max text-elegant font-bold"><strong>MAX.</strong></h1>
+	</div>
+	
+	<!-- Site Content -->
+	<div class="container">
+		
+		<!-- About -->
+		<div id="about" class="row py-5">
+			<div class="col-md-6">
+				<h2 class="white-text">Hi. I'm Max.</h2>
+				<p class="white-text">I'm a recent college graduate with a major in Computer Science.</p>
+			</div>
+			<div class="col-md-6">
+				<div id="description">
+					<p class="white-text">My journey into the wonderful world of developing has been a little
+						unorthodox. My
+						first foray into programming and its associated concepts was a high school Java course, and I
+						hated
+						it so much that I stopped having anything to do with development until college, where I started
+						out
+						enrolled in a mechanical engineering program. During my freshman year, I saw some friends
+						working on
+						some pretty cool (albeit simple) applications. I decided to switch majors and haven't regretted
+						it
+						since. </p>
+					<p class="white-text pt-2">Okay, maybe once or twice.</p>
+					<p class="white-text"></p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<hr class="hr-light py-5">
+		
+		<!-- Projects -->
+		<div id="projects" class="row">
+			
+			<!-- project titles -->
+			<div class="col-md-6 pr-0">
+				<ul id="project-titles-list" class="list-group">
+					<!-- weather -->
+					<li class="project-title-li list-group-item grey darken-3 white-text">
+						<p class="project-title">
+							#weather
+						</p>
+					</li>
+					
+					<!-- social media app -->
+					<li class="project-title-li list-group-item grey darken-3 white-text">Android Social Media</li>
+					
+					<!-- EGAMS -->
+					<li class="project-title-li list-group-item grey darken-3 white-text">EGAMS</li>
+				
+				</ul>
+			</div>
+			
+			<!-- project info -->
+			<div class="col-md-6 pl-0">
+				<!--Carousel Wrapper-->
+				<div id="carousel-projects" class="carousel slide carousel-fade" data-ride="carousel">
+					<!--Indicators-->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-projects" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-projects" data-slide-to="1"></li>
+						<li data-target="carousel-projects" data-slide-to="2"></li>
+					</ol>
+					
+					<!--Slides-->
+					<div class="carousel-inner" role="listbox">
+						
+						<!--First slide-->
+						<div class="carousel-item active">
+							
+							<!-- Card -->
+							<div class="card">
+								
+								<!-- Card image -->
+								<div class="view overlay">
+									<img class="card-img-top" src="./img/weatherMap.jpg" alt="Card image cap">
+									<a>
+										<div class="mask rgba-white-slight"></div>
+									</a>
+								</div>
+								
+								<!-- Card content -->
+								<div class="card-body elegant-color-dark white-text rounded-bottom">
+									
+									<!-- Title -->
+									<h4 class="card-title text-center">#weather</h4>
+									<hr class="hr-light">
+									<!-- Text -->
+									<p class="card-text white-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<!-- Link -->
+									<a href="#!" class="white-text d-flex justify-content-end"><h5>Git Repo <i class="fa fa-angle-double-right"></i></h5></a>
+								
+								</div>
+							
+							</div>
+							<!-- Card Dark -->
+						</div>
+						
+						<!--Second slide-->
+						<div class="carousel-item">
+							
+							<!-- Card Dark -->
+							<div class="card">
+								
+								<!-- Card image -->
+								<div class="view overlay">
+									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg" alt="Card image cap">
+									<a>
+										<div class="mask rgba-white-slight"></div>
+									</a>
+								</div>
+								
+								<!-- Card content -->
+								<div class="card-body elegant-color-dark white-text rounded-bottom">
+									
+									<!-- Title -->
+									<h4 class="card-title text-center">Social Media Project (Android)</h4>
+									<hr class="hr-light">
+									<!-- Text -->
+									<p class="card-text white-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<!-- Link -->
+									<a href="#!" class="white-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+								
+								</div>
+							
+							</div>
+							<!-- Card Dark -->
+						</div>
+						
+						<!--Third slide-->
+						<div class="carousel-item">
+							
+							<!-- Card Dark -->
+							<div class="card">
+								
+								<!-- Card image -->
+								<div class="view overlay">
+									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg" alt="Card image cap">
+									<a>
+										<div class="mask rgba-white-slight"></div>
+									</a>
+								</div>
+								
+								<!-- Card content -->
+								<div class="card-body elegant-color-dark white-text rounded-bottom">
+									
+									<!-- Title -->
+									<h4 class="card-title text-center">EGAMS</h4>
+									<h6 class="card-title text-center">Erie Garbage Account Management System</h6>
+									<hr class="hr-light">
+									<!-- Text -->
+									<p class="card-text white-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<!-- Link -->
+									<a href="#!" class="white-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+								
+								</div>
+							
+							</div>
+							<!-- Card Dark -->
+						</div>
+						
+					</div>
+					
+					<!--Controls-->
+					<a class="carousel-control-prev" href="#carousel-projects" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carousel-projects" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					
+				</div>
+			
+			
+			</div>
+		
+		</div>
+	
+	</div>
+	
+	<!-- scripts -->
+	<div>
+		<!-- JQuery -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript"
+		        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript"
+		        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript"
+		        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+		<!-- My Scripts -->
+		<script type="text/javascript" src="./js-scripts.js"></script>
+	</div>
 
-        <!-- Name/Logo -->
-        <a class="navbar-brand max-text-color" href="#jumbotron">MAX.</a>
 
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="nav"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="nav">
-
-            <!-- Links -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-    <!-- Jumbotron -->
-    <div id="jumbotron" class="jumbotron text-center grey lighten-5 z-depth-2">
-        <h1 class="max text-elegant font-bold"><strong>MAX.</strong></h1>
-    </div>
-
-    <!-- Site Content -->
-    <div class="container">
-
-        <!-- About -->
-        <div id="about" class="row py-5">
-            <div class="col-md-6">
-                <h2 class="white-text">Hi. I'm Max.</h2>
-                <p class="white-text">I'm a recent college graduate with a major in Computer Science.</p>
-            </div>
-            <div class="col-md-6">
-                <div id="description">
-                    <p class="white-text">My journey into the wonderful world of developing has been a little unorthodox. My first foray into programming and its associated concepts was a high school Java course, and I hated it so much that I stopped having anything to do with development until college, where I started out enrolled in a mechanical engineering program. During my freshman year, I saw some friends working on some pretty cool (albeit simple) applications. I decided to switch majors and haven't regretted it since. </p>
-                    <p class="white-text pt-2">Okay, maybe once or twice.</p>
-                    <p  class="white-text"></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div id="projects" class="row">
-
-            <!-- project titles -->
-            <div class="col-md-6">
-
-                <!-- weather -->
-                
-
-
-                <!-- social media app -->
-
-
-                <!-- zen gate -->
-
-
-            </div>
-
-            <!-- project info -->
-            <div class="col-md-6">
-
-                <!-- weather -->
-
-
-                <!-- social media app -->
-
-
-                <!-- zen gate -->
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- scripts -->
-    <div>
-        <!-- JQuery -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
-        <!-- My Scripts -->
-        <script type="text/javascript" src="./js-scripts.js"></script>
-    </div>
 </body>
 </html>
