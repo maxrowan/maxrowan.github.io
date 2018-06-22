@@ -8,8 +8,26 @@ $( document ).ready( function() {
 		});
 	});
 
-	// set carousel to not auto cycle
-	$( '#carousel-projects' ).carousel( 'pause' );
+
 
 	// smooth scroll navbar
+
+
+	// project hover - links to carousel
+	let $carousel = $( '.carousel' );
+	$carousel.carousel( 'pause' );
+
+	$( '#weather-title' ).mouseenter( function() {
+		$carousel.carousel( 0 );
+		$carousel.carousel( 'pause' );
+	});
+	$( '#android-title' ).mouseenter( function() {
+		$carousel.carousel( 1 );
+		$carousel.carousel( 'pause' );
+	});
+	$( '#egams-title' ).mouseenter( function() {
+		$carousel.carousel( 2 );
+		$carousel.carousel( 'pause' );
+	} );
 });
+

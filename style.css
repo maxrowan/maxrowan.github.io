@@ -2,9 +2,11 @@
     margin-top: 10em;
 }
 
-#project-titles-list {
-    height: 100%;
-    width: 100%;
+
+
+#android-title {
+    border-top: white 1px solid;
+    border-bottom: white 1px solid;
 }
 
 .hidden {
@@ -26,11 +28,45 @@
 }
 
 .text-elegant {
-    color: #2E2E2E ;
+    color: #2E2E2E;
+}
+
+.section-title {
+    font-size: 60px;
+    letter-spacing: 15px;
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    color: white;
+    margin-bottom: 70px;
 }
 
 .project-title-li {
     height: 33.33333333%;
     line-height: 33.33333333%;
     text-align: center;
+}
+
+.project-title {
+    margin: 0;
+    padding: 16px 0 16px 0;
+    font-size: 50px;
+    letter-spacing: 7px;
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    color: white;
+}
+
+.project-title:hover {
+    color: #2E2E2E;
+}
+
+.divider {
+    margin: 100px 0;
+}
+
+.footer {
+    width: 140px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
