@@ -39,6 +39,10 @@
     margin-bottom: 70px;
 }
 
+.card {
+    height: 650px !important;
+}
+
 .project-title-li {
     height: 33.33333333%;
     line-height: 33.33333333%;
@@ -62,11 +66,18 @@
     margin: 100px 0;
 }
 
+.md-form {
+    margin-right: 40px !important;
+}
+
 .footer {
-    width: 140px;
     margin-top: 50px;
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
+    font-size: 34px;
 }
+
+.soc-icon {
+    margin: 0 10px;
+}
+
+/* scrollbar */

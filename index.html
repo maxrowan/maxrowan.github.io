@@ -21,7 +21,7 @@
 	<nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-dark elegant hidden">
 		
 		<!-- Name/Logo -->
-		<a class="navbar-brand max-text-color" href="#jumbotron">MAX.</a>
+		<a id="brand" href="#jumbotron" class="navbar-brand max-text-color">MAX.</a>
 		
 		<!-- Collapse button -->
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -35,19 +35,17 @@
 			
 			<!-- Links -->
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link">Home
-						<span class="sr-only">(current)</span>
-					</a>
+				<li id="home-nav-li" class="nav-item active">
+					<a href="#jumbotron" class="nav-link">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link">About</a>
+					<a href="#about" class="nav-link">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link">Projects</a>
+					<a href="#projects" class="nav-link">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link">Contact</a>
+					<a href="#contact" class="nav-link">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -66,7 +64,7 @@
 		<div id="about" class="row py-5">
 			<div class="col-md-6">
 				<h2 class="white-text">Hi. I'm Max.</h2>
-				<p class="white-text">I'm a recent college graduate with a major in Computer Science.</p>
+				<p class="white-text">I'm a recent college graduate with a degree in Computer Science.</p>
 			</div>
 			<div class="col-md-6">
 				<div id="description">
@@ -92,8 +90,8 @@
 		
 		
 		<!-- Projects -->
-		<h2 class="section-title text-center">MY PROJECTS</h2>
-		<div id="projects" class="row mb-5">
+		<h2 id="projects" class="section-title text-center">MY PROJECTS</h2>
+		<div class="row mb-5">
 			
 			<!-- project titles -->
 			<div class="col-md-6 pr-0">
@@ -157,9 +155,10 @@
 									<h4 class="card-title text-center">#weather</h4>
 									<hr class="hr-light">
 									<!-- Text -->
-									<p class="card-text white-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									<!-- Link -->
-									<a href="#!" class="white-text d-flex justify-content-end"><h5>Git Repo <i class="fa fa-angle-double-right"></i></h5></a>
+									<p class="card-text white-text mb-4">This was my senior capstone project, built for Erie Insurance.<br><br>
+									Its purpose is to monitor the twittersphere for tweets related to weather. The idea is that if a weather forecast in their area-of-operations is inaccurate, that they'll have as up-to-date information on inclement weather. Since inclement weather is correlated with property damage, this information helps them prepare for incoming claims.</p>
+									<!-- Github -->
+									<a href="https://github.com/maxrowan/weather" class="white-text text-center"><h5>Git Repo <i class="fa fa-github"></i></h5></a>
 								
 								</div>
 							
@@ -189,8 +188,8 @@
 									<hr class="hr-light">
 									<!-- Text -->
 									<p class="card-text white-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									<!-- Link -->
-									<a href="#!" class="white-text d-flex justify-content-end"><h5>Git Repo <i class="fa fa-angle-double-right"></i></h5></a>
+									<!-- Github -->
+									<a href="#!" class="white-text text-center"><h5>Git Repo <i class="fa fa-github"></i></h5></a>
 								
 								</div>
 							
@@ -221,8 +220,8 @@
 									<hr class="hr-light">
 									<!-- Text -->
 									<p class="card-text white-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									<!-- Link -->
-									<a href="#!" class="white-text d-flex justify-content-end"><h5>Read more <i class="fa fa-angle-double-right"></i></h5></a>
+									<!-- Github -->
+									<a href="https://github.com/maxrowan/EGAMS" class="white-text text-center"><h5>Git Repo <i class="fa fa-github"></i></h5></a>
 								
 								</div>
 							
@@ -254,27 +253,69 @@
 		
 		
 		<!-- Contact -->
-		<h2 class="section-title text-center">CONTACT</h2>
+		<div id="contact">
+			<h2 class="section-title text-center">CONTACT</h2>
 			
 			<!-- social media -->
 			<p class="text-center text-white">Hey, you're awesome.</p>
 			<p class="text-center text-white">Thanks for visiting my site. If you want to get in touch, just enter your information below and send me an email or check me out on social media.</p>
 			
-			</div>
+			<!-- Material form contact -->
+			<form>
+				
+				<!-- Material input text -->
+				<div class="md-form">
+					<i class="fa fa-user prefix white-text"></i>
+					<input type="text" id="materialFormContactNameEx" class="form-control text-white">
+					<label for="materialFormContactNameEx" class="text-white">Your name</label>
+				</div>
+				
+				<!-- Material input email -->
+				<div class="md-form">
+					<i class="fa fa-envelope prefix white-text"></i>
+					<input type="email" id="email" class="form-control text-white">
+					<label for="email" class="text-white">Your email</label>
+				</div>
+				
+				<!-- Material input subject -->
+				<div class="md-form">
+					<i class="fa fa-tag prefix white-text"></i>
+					<input type="text" id="subject" class="form-control text-white">
+					<label for="subject" class="text-white">Subject</label>
+				</div>
+				
+				<!-- Material textarea message -->
+				<div class="md-form">
+					<i class="fa fa-pencil prefix white-text"></i>
+					<textarea type="text" id="message" class="form-control md-textarea text-white" rows="3"></textarea>
+					<label for="message" class="text-white">Your message</label>
+				</div>
+				
+				<div class="text-center mt-4">
+					<button id="submit-btn" class="btn btn-outline-white" type="submit">Send</button>
+				</div>
+			</form>
+			<!-- Material form contact -->
 			
-			<!-- message -->
+		</div>
 		
-		
-		
-	
 	</div>
 	
 	<!-- footer -->
-	<div class="footer">
-		<i class="fa fa-github"></i>
-		<i class="fa fa-linkedin"></i>
-		<i class="fa fa-twitter"></i>
-		<i class="fa fa-facebook"></i>
+	<div class="footer text-center">
+		<a href="https://github.com/maxrowan">
+			<i class="fa fa-github text-white soc-icon"></i>
+		</a>
+		<a href="https://www.linkedin.com/in/max-rowan-38b5b910b">
+			<i class="fa fa-linkedin text-white soc-icon"></i>
+		</a>
+		<a href="https://twitter.com/sixthMax">
+			<i class="fa fa-twitter text-white soc-icon"></i>
+		</a>
+		<a href="https://www.facebook.com/max.rowan.353">
+			<i class="fa fa-facebook text-white soc-icon"></i>
+		</a>
+		
 	</div>
 	
 	<!-- scripts -->
