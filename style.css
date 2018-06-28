@@ -1,8 +1,10 @@
+#maxJumbotron {
+    width: 100vw;
+}
+
 #description {
     margin-top: 10em;
 }
-
-
 
 #android-title {
     border-top: white 1px solid;
