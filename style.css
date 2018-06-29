@@ -1,10 +1,17 @@
+body {
+    max-width: 100vw;
+    margin: auto;
+    overflow-x: hidden;
+}
+
 #maxJumbotron {
     width: 100vw;
 
-    animation: slide 2s 4s linear;
-    animation-fill-mode: forwards;
+    /*animation: slide 2s 4s linear;*/
+    /*animation-fill-mode: forwards;*/
 }
 
+/*
 @keyframes slide {
     from {
         margin-top: 0;
@@ -13,6 +20,93 @@
         margin-top: -100%;
     }
 }
+*/
+
+
+/*   navbar   */
+#navbar #navItems {
+    line-height: 1;
+    margin: 0 auto 0 3em;
+}
+
+#navList {
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-item {
+    display: block;
+    margin: 1em 0;
+}
+
+.menu-link {
+    font-size: 1.05em;
+    font-weight: bold;
+    display: block;
+    padding: 1em;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    outline: none;
+}
+
+
+#navbar #navItems .menu-link {
+    position: relative;
+    display: block;
+    margin: 0 1.5em;
+    padding: 0.75em 0;
+    text-align: center;
+    color: #b5b5b5;
+    transition: color 0.3s;
+}
+
+#navbar #navItems .menu-link:hover,
+#navbar #navItems .menu-link:focus {
+    color: #929292;
+}
+
+#navbar #navItems .menu-item-current .menu-link {
+    color: #d94f5c;
+}
+
+#navbar #navItems .menu-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #d94f5c;
+    transform: scale3d( 0, 1, 1 );
+    transition: transform 0.1s;
+}
+
+#navbar #navItems .menu-item-current .menu-link::before {
+    transform: scale3d( 1, 1, 1 );
+    transition-timing-function: cubic-bezier( 0.4, 0, 0.2, 1 );
+    transition-duration: 0.3s;
+}
+
+/*-- navbar --*/
 
 #description {
     margin-top: 10em;

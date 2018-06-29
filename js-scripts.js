@@ -1,17 +1,19 @@
 $( document ).ready( function () {
 
+	disableWaves();
+
 	// highlight nav item by window position
 	$( window ).on( 'scroll', function() {
 		highlightNavOnScroll();
 	});
 
 	// navbar or brand link (scroll) to sections
-	$( ".nav-link[href^='#']" ).click( function ( e ) {
+	$( ".menu-link[href^='#']" ).click( function ( e ) {
 		e.preventDefault();
 
-		$( "li.active" ).removeClass( 'active' );
+		$( "li.menu-item-current" ).removeClass( 'menu-item-current' );
 
-		$( this ).parent().addClass( 'active' );
+		$( this ).parent().addClass( 'menu-item-current' );
 
 		let pos = $( $( this ).attr( "href" ) ).offset().top - 88;
 
@@ -22,9 +24,9 @@ $( document ).ready( function () {
 	$( "#brand" ).click( function ( e ) {
 		e.preventDefault();
 
-		$( 'li.active' ).removeClass( 'active' );
+		$( 'li.menu-item-current' ).removeClass( 'menu-item-current' );
 
-		$( '#home-nav-li' ).addClass( 'active' );
+		$( '#home-nav-li' ).addClass( 'menu-item-current' );
 
 		$( 'body, html' ).animate( {
 			scrollTop: 0
@@ -87,3 +89,7 @@ function setNavActive( $el ) {
 	$el.addClass( 'active' );
 }
 
+function disableWaves() {
+	let $menuLink = $( '.menu-link' );
+	$menuLink.removeClass( 'waves-effect waves-light' );
+}
