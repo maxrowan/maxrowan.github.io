@@ -1,13 +1,9 @@
 $( document ).ready( function () {
 
-	// slides navbar down when user scrolls
-	$( document ).one( 'scroll', function () {
-		$navbar = $( '#navbar' );
-		$navbar.slideUp( 0, function () {
-			$navbar.removeClass( 'hidden' ).slideDown( 'fast' );
-		} );
-	} );
-
+	// highlight nav item by window position
+	$( window ).on( 'scroll', function() {
+		highlightNavOnScroll();
+	});
 
 	// navbar or brand link (scroll) to sections
 	$( ".nav-link[href^='#']" ).click( function ( e ) {
@@ -34,8 +30,6 @@ $( document ).ready( function () {
 			scrollTop: 0
 		});
 	} );
-
-	// highlight nav item by window position
 
 
 	// project hover - links to carousel
@@ -69,9 +63,27 @@ $( document ).ready( function () {
 			subject: subject,
 			message: message
 		};
-
-		console.log( submitPayload );
 	} );
 
 } );
+
+function highlightNavOnScroll() {
+	if ( $(window).scrollTop() < $( '#about' ).offset().top - 53 ) {				// highlight 'home'
+		setNavActive( $( '#liNavHome' ) );
+
+	} else if ( $(window).scrollTop() < $( '#projects' ).offset().top - 154 ) {	// highlight 'about'
+		setNavActive( $( '#liNavAbout' ) );
+
+	} else if ( $(window).scrollTop() < $( '#contact' ).offset().top - 240 ) {	// highlight 'projects'
+		setNavActive(  $( '#liNavProjects' ) );
+
+	} else {																// highlight 'contact'
+		setNavActive( $( '#liNavContact' ) );
+	}
+}
+
+function setNavActive( $el ) {
+	$( "li.active" ).removeClass( 'active' );
+	$el.addClass( 'active' );
+}
 

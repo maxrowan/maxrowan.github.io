@@ -17,34 +17,36 @@
 </head>
 <body class="elegant-color">
 	
+	<img id="maxJumbotron" src="img/max.PNG">
+	
 	<!-- Navbar -->
-	<nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-dark elegant hidden">
+	<nav id="navbar" class="navbar navbar-expand-lg sticky-top navbar-dark elegant">
 		
 		<!-- Name/Logo -->
-		<a id="brand" href="#jumbotron" class="navbar-brand max-text-color">MAX.</a>
+		<a id="brand" href="#maxJumbotron" class="navbar-brand max-text-color">MAX.</a>
 		
 		<!-- Collapse button -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems"
 		        aria-controls="nav"
 		        aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		
 		<!-- Collapsible content -->
-		<div class="collapse navbar-collapse" id="nav">
+		<div class="collapse navbar-collapse" id="navItems">
 			
 			<!-- Links -->
 			<ul class="navbar-nav ml-auto">
-				<li id="home-nav-li" class="nav-item active">
-					<a href="#jumbotron" class="nav-link">Home</a>
+				<li id="liNavHome" class="nav-item active">
+					<a href="#maxJumbotron" class="nav-link">Home</a>
 				</li>
-				<li class="nav-item">
+				<li id="liNavAbout" class="nav-item">
 					<a href="#about" class="nav-link">About</a>
 				</li>
-				<li class="nav-item">
+				<li id="liNavProjects" class="nav-item">
 					<a href="#projects" class="nav-link">Projects</a>
 				</li>
-				<li class="nav-item">
+				<li id="liNavContact" class="nav-item">
 					<a href="#contact" class="nav-link">Contact</a>
 				</li>
 			</ul>
@@ -52,7 +54,6 @@
 	
 	</nav>
 	
-	<img id="maxJumbotron" src="img/max.PNG">
 	
 	<!-- Jumbotron
 	<div id="jumbotron" class="jumbotron text-center white z-depth-2">
@@ -65,23 +66,16 @@
 		<!-- About -->
 		<div id="about" class="row py-5">
 			<div class="col-md-6">
-				<h2 class="white-text">Hi. I'm Max.</h2>
+				<h1 class="white-text">Hi. I'm Max.</h1>
 				<p class="white-text">I'm a recent college graduate with a degree in Computer Science.</p>
+				<blockquote class="white-text quote"><strong><em>"Stop wasting your time on that computer."</em></strong></blockquote>
+				<p class="white-text mt-2 ml-5">-My Dad</p>
 			</div>
 			<div class="col-md-6">
 				<div id="description">
-					<p class="white-text">My journey into the wonderful world of developing has been a little
-						unorthodox. My
-						first foray into programming and its associated concepts was a high school Java course, and I
-						hated
-						it so much that I stopped having anything to do with development until college, where I started
-						out
-						enrolled in a mechanical engineering program. During my freshman year, I saw some friends
-						working on
-						some pretty cool (albeit simple) applications. I decided to switch majors and haven't regretted
-						it
-						since. </p>
-					<p class="white-text pt-2">Okay, maybe once or twice.</p>
+					<p class="white-text">
+						I've been fascinated with computers for a very long time. This fascination started as a love for video games which led to a curiosity for how applications and the systems they're built on work. Growing up, my dad's (almost) daily mantra was, "Stop wasting your time on that computer."<br><br>He has since apologized.<br><br>I love solving problems and creating new things, so programming seems a natural fit. I have experience with the full stack  as well as app development on Android. Check out some of my work or reach out to me below.</p>
+					<!--<p class="white-text pt-2">Okay, maybe once or twice.</p>-->
 					<p class="white-text"></p>
 				</div>
 			</div>
@@ -96,7 +90,7 @@
 		<div class="row mb-5">
 			
 			<!-- project titles -->
-			<div class="col-md-6 pr-0">
+			<div class="col-md-6">
 				<div id="project-titles-list" class="list-group-flush">
 					<!-- weather -->
 					<div id="weather-title" class="list-group-item-action flex-column text-center">
@@ -123,7 +117,7 @@
 			</div>
 			
 			<!-- project info -->
-			<div class="col-md-6 pl-0">
+			<div class="col-md-6">
 				<!--Carousel Wrapper-->
 				<div id="carousel-projects" class="carousel slide carousel-fade" data-ride="carousel">
 					<!--Indicators-->
@@ -258,7 +252,6 @@
 		<div id="contact">
 			<h2 class="section-title text-center">CONTACT</h2>
 			
-			<!-- social media -->
 			<p class="text-center text-white">Hey, you're awesome.</p>
 			<p class="text-center text-white">Thanks for visiting my site. If you want to get in touch, just enter your information below and send me an email or check me out on social media.</p>
 			

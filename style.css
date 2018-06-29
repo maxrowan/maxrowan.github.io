@@ -1,14 +1,39 @@
 #maxJumbotron {
     width: 100vw;
+
+    animation: slide 2s 4s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: -100%;
+    }
 }
 
 #description {
     margin-top: 10em;
 }
 
-#android-title {
-    border-top: white 1px solid;
-    border-bottom: white 1px solid;
+#android-title:before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 20px;
+    border-top: 1px solid white;
+}
+
+#android-title:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    padding-top: 20px;
+    border-bottom: 1px solid white;
 }
 
 .hidden {
@@ -17,8 +42,9 @@
     left: -9999px !important;
 }
 
-.jumbotron {
-    height: 100vh;
+.quote {
+    margin: 80px 0 0 20px;
+    font-size: 20px;
 }
 
 .max {
@@ -54,7 +80,7 @@
 .project-title {
     margin: 0;
     padding: 16px 0 16px 0;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 7px;
     font-family: "Segoe UI", Arial, sans-serif !important;
     color: white;
