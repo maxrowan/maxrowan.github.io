@@ -4,7 +4,7 @@ $( document ).ready( function () {
 
 	// highlight nav item by window position
 	$( window ).on( 'scroll', function() {
-		highlightNavOnScroll();
+		// highlightNavOnScroll();
 	});
 
 	// navbar or brand link (scroll) to sections
@@ -85,8 +85,8 @@ function highlightNavOnScroll() {
 }
 
 function setNavActive( $el ) {
-	$( "li.active" ).removeClass( 'active' );
-	$el.addClass( 'active' );
+	$( 'li' ).removeClass( 'menu-item-current' );
+	$el.addClass( 'menu-item-current' );
 }
 
 function disableWaves() {
