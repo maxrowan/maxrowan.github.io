@@ -4,23 +4,71 @@ body {
     overflow-x: hidden;
 }
 
-#maxJumbotron {
+#max {
     width: 100vw;
-
-    /*animation: slide 2s 4s linear;*/
-    /*animation-fill-mode: forwards;*/
+    height: 100vh;
+    background-color: #fff;
+}
+#m {
+    transform: matrix(1,0,0,1,140,348);
+}
+#a {
+    transform: matrix(1,0,0,1,205,348);
+}
+#x {
+    transform: matrix(1,0,0,1,262,348);
+}
+#period {
+    transform: matrix(1,0,0,1,301,348);
 }
 
-/*
-@keyframes slide {
-    from {
-        margin-top: 0;
+.layer {
+    animation: 4s linear infinite;
+}
+
+.layer1 {
+    animation-name: layer1;
+}
+.layer2 {
+    animation-name: layer2;
+}
+.layer3 {
+    animation-name: layer3;
+}
+
+@keyframes layer1 {
+    0%, 15% {
+        fill: #b2b2b2;
     }
-    to {
-        margin-top: -100%;
+    25%, 90% {
+        fill: #4b4b4b;
+    }
+    100% {
+        fill: #b2b2b2;
     }
 }
-*/
+@keyframes layer2 {
+    0%, 40% {
+        fill: #b2b2b2;
+    }
+    50%, 86% {
+        fill: #4b4b4b;
+    }
+    96%, 100% {
+        fill: #b2b2b2;
+    }
+}
+@keyframes layer3 {
+    0%, 65% {
+        fill: #b2b2b2;
+    }
+    75%, 82% {
+        fill: #4b4b4b;
+    }
+    92%, 100% {
+        fill: #b2b2b2;
+    }
+}
 
 
 /*   navbar   */
