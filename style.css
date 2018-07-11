@@ -9,33 +9,116 @@ body {
     height: 100vh;
     background-color: #fff;
 }
-#m {
-    transform: matrix(1,0,0,1,140,348);
-}
-#a {
-    transform: matrix(1,0,0,1,205,348);
-}
-#x {
-    transform: matrix(1,0,0,1,262,348);
-}
-#period {
-    transform: matrix(1,0,0,1,301,348);
-}
 
 .layer {
-    animation: 4.7s linear infinite;
+    animation: 5s linear infinite;
+    fill: #fff;
+    stroke: #4b4b4b;
+    stroke-width: .5px;
 }
 
-.layer1 {
+.draw-m {
+    transform: matrix(1,0,0,1,140,348);
+
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 440px;
+
     animation-name: layer1;
 }
-.layer2 {
+.draw-a {
+    transform: matrix(1,0,0,1,205,348);
+
+    stroke-dasharray: 210px;
+    stroke-dashoffset: 210px;
+
     animation-name: layer2;
 }
-.layer3 {
+.draw-x {
+    transform: matrix(1,0,0,1,262,348);
+
+    stroke-dasharray: 280px;
+    stroke-dashoffset: 280px;
+
     animation-name: layer3;
 }
-.layer4 {
+.draw-period {
+    transform: matrix(1,0,0,1,301,348);
+
+    stroke-dasharray: 40px;
+    stroke-dashoffset: 40px;
+
+    animation-name: layer4;
+}
+
+@keyframes layer1 {
+    40% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+    70%, 100% {
+        stroke-dashoffset: 0;
+        stroke-width: 0;
+        fill: #b2b2b2;
+    }
+}
+@keyframes layer2 {
+    0%, 10% {
+        stroke-dashoffset: 210px;
+    }
+    50% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-width: 0;
+        fill: #b2b2b2;
+    }
+
+}
+@keyframes layer3 {
+    0%, 20% {
+        stroke-dashoffset: 280px;
+    }
+    60% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-width: 0;
+        fill: #b2b2b2;
+    }
+}
+@keyframes layer4 {
+    0%, 30% {
+        stroke-dashoffset: 40px;
+    }
+    70% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-width: 0;
+        fill: #b2b2b2;
+    }
+}
+
+.pulse {
+    animation: 5s linear infinite;
+}
+/*
+.pulse-m {
+    animation-name: layer1;
+}
+.pulse-a {
+    animation-name: layer2;
+}
+.pulse-x {
+    animation-name: layer3;
+}
+.pulse-period {
     animation-name: layer4;
 }
 
@@ -84,7 +167,7 @@ body {
     }
 
 }
-
+*/
 
 /*   navbar   */
 #navbar #navItems {

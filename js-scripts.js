@@ -2,6 +2,16 @@ $( document ).ready( function () {
 
 	disableWaves();
 
+	// when draw animation is done, switch to highlight/pulse animation
+	$( '#m').on('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(){
+		debugger;
+		$( this ).removeClass( 'draw-m');
+		$( this ).removeClass( 'layer' );
+		$( this ).addClass( 'pulse' );
+		$( this).addClass('pulse-m');
+	});
+
+
 	// highlight nav item by window position
 	$( window ).on( 'scroll', function() {
 		// highlightNavOnScroll();
