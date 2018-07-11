@@ -23,7 +23,7 @@ body {
 }
 
 .layer {
-    animation: 4s linear infinite;
+    animation: 4.7s linear infinite;
 }
 
 .layer1 {
@@ -35,12 +35,15 @@ body {
 .layer3 {
     animation-name: layer3;
 }
+.layer4 {
+    animation-name: layer4;
+}
 
 @keyframes layer1 {
-    0%, 15% {
+    0%, 12% {
         fill: #b2b2b2;
     }
-    25%, 90% {
+    20%, 92% {
         fill: #4b4b4b;
     }
     100% {
@@ -48,10 +51,10 @@ body {
     }
 }
 @keyframes layer2 {
-    0%, 40% {
+    0%, 32% {
         fill: #b2b2b2;
     }
-    50%, 86% {
+    40%, 90% {
         fill: #4b4b4b;
     }
     96%, 100% {
@@ -59,15 +62,27 @@ body {
     }
 }
 @keyframes layer3 {
-    0%, 65% {
+    0%, 52% {
         fill: #b2b2b2;
     }
-    75%, 82% {
+    60%, 88% {
+        fill: #4b4b4b;
+    }
+    94%, 100% {
+        fill: #b2b2b2;
+    }
+}
+@keyframes layer4 {
+    0%, 72% {
+        fill: #b2b2b2;
+    }
+    80%, 86% {
         fill: #4b4b4b;
     }
     92%, 100% {
         fill: #b2b2b2;
     }
+
 }
 
 
