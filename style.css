@@ -9,6 +9,20 @@ body {
     height: 100vh;
     background-color: #fff;
 }
+#m {
+    transform: matrix(1,0,0,1,140,348);
+}
+#a {
+    transform: matrix(1,0,0,1,205,348);
+
+}
+#x {
+    transform: matrix(1,0,0,1,262,348);
+
+}
+#period {
+    transform: matrix(1,0,0,1,301,348);
+}
 
 .layer {
     animation: 5s linear infinite;
@@ -18,32 +32,24 @@ body {
 }
 
 .draw-m {
-    transform: matrix(1,0,0,1,140,348);
-
     stroke-dasharray: 440px;
     stroke-dashoffset: 440px;
 
     animation-name: layer1;
 }
 .draw-a {
-    transform: matrix(1,0,0,1,205,348);
-
     stroke-dasharray: 210px;
     stroke-dashoffset: 210px;
 
     animation-name: layer2;
 }
 .draw-x {
-    transform: matrix(1,0,0,1,262,348);
-
     stroke-dasharray: 280px;
     stroke-dashoffset: 280px;
 
     animation-name: layer3;
 }
 .draw-period {
-    transform: matrix(1,0,0,1,301,348);
-
     stroke-dasharray: 40px;
     stroke-dashoffset: 40px;
 
@@ -105,69 +111,6 @@ body {
     }
 }
 
-.pulse {
-    animation: 5s linear infinite;
-}
-/*
-.pulse-m {
-    animation-name: layer1;
-}
-.pulse-a {
-    animation-name: layer2;
-}
-.pulse-x {
-    animation-name: layer3;
-}
-.pulse-period {
-    animation-name: layer4;
-}
-
-@keyframes layer1 {
-    0%, 12% {
-        fill: #b2b2b2;
-    }
-    20%, 92% {
-        fill: #4b4b4b;
-    }
-    100% {
-        fill: #b2b2b2;
-    }
-}
-@keyframes layer2 {
-    0%, 32% {
-        fill: #b2b2b2;
-    }
-    40%, 90% {
-        fill: #4b4b4b;
-    }
-    96%, 100% {
-        fill: #b2b2b2;
-    }
-}
-@keyframes layer3 {
-    0%, 52% {
-        fill: #b2b2b2;
-    }
-    60%, 88% {
-        fill: #4b4b4b;
-    }
-    94%, 100% {
-        fill: #b2b2b2;
-    }
-}
-@keyframes layer4 {
-    0%, 72% {
-        fill: #b2b2b2;
-    }
-    80%, 86% {
-        fill: #4b4b4b;
-    }
-    92%, 100% {
-        fill: #b2b2b2;
-    }
-
-}
-*/
 
 /*   navbar   */
 #navbar #navItems {
