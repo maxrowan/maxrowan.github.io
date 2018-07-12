@@ -1,7 +1,26 @@
 $( document ).ready( function () {
 
 	disableWaves();
-	
+
+	$( 'body' ).on( 'animationend webkitAnimationEnd oAnimationEnd', function() {
+
+		// code to execute after animation ends
+		let $m = $( '#m' );
+		$m.removeClass('layer draw-m');
+		$m.addClass( 'pulse pulse-m' );
+
+		let $a = $( '#a' );
+		$a.removeClass('layer draw-a');
+		$a.addClass( 'pulse pulse-a' );
+
+		let $x = $( '#x' );
+		$x.removeClass('layer draw-x');
+		$x.addClass( 'pulse pulse-x' );
+
+		let $period = $( '#period' );
+		$period.removeClass('layer draw-period');
+		$period.addClass( 'pulse pulse-period' );
+	});
 
 	// highlight nav item by window position
 	$( window ).on( 'scroll', function() {
