@@ -1,31 +1,34 @@
 $( document ).ready( function () {
 
-	disableWaves();
-
-	$( 'body' ).on( 'animationend webkitAnimationEnd oAnimationEnd', function() {
+	$( 'body' ).one( 'animationend webkitAnimationEnd oAnimationEnd', function () {
 
 		// code to execute after animation ends
 		let $m = $( '#m' );
-		$m.removeClass('layer draw-m');
-		$m.addClass( 'pulse pulse-m' );
 
-		let $a = $( '#a' );
-		$a.removeClass('layer draw-a');
-		$a.addClass( 'pulse pulse-a' );
+		if ( $m.hasClass( 'layer' ) ) {
+			$m.removeClass( 'layer draw-m' );
+			$m.addClass( 'pulse-name pulse-m' );
 
-		let $x = $( '#x' );
-		$x.removeClass('layer draw-x');
-		$x.addClass( 'pulse pulse-x' );
+			let $a = $( '#a' );
+			$a.removeClass( 'layer draw-a' );
+			$a.addClass( 'pulse-name pulse-a' );
 
-		let $period = $( '#period' );
-		$period.removeClass('layer draw-period');
-		$period.addClass( 'pulse pulse-period' );
-	});
+			let $x = $( '#x' );
+			$x.removeClass( 'layer draw-x' );
+			$x.addClass( 'pulse-name pulse-x' );
+
+			let $period = $( '#period' );
+			$period.removeClass( 'layer draw-period' );
+			$period.addClass( 'pulse-name pulse-period' );
+		}
+	} );
+
+	disableWaves();
 
 	// highlight nav item by window position
-	$( window ).on( 'scroll', function() {
+	//$( window ).on( 'scroll', function() {
 		// highlightNavOnScroll();
-	});
+	//});
 
 	// navbar or brand link (scroll) to sections
 	$( ".menu-link[href^='#']" ).click( function ( e ) {

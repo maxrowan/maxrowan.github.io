@@ -26,8 +26,8 @@ body {
 }
 
 
+
 .layer {
-    -webkit-animation: 5s linear infinite;
     animation: 5s linear infinite;
     fill: #fff;
     stroke: #4b4b4b;
@@ -119,7 +119,8 @@ body {
 }
 
 
-.pulse {
+
+.pulse-name {
     animation: 5s linear infinite;
 }
 
